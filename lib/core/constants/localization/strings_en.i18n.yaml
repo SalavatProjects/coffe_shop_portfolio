@@ -1,0 +1,33 @@
+onboarding:
+  head: Fall in Love with Coffee in Blissful Delight!
+  title: Welcome to our cozy coffee corner, where every cup is a delightful for you.
+  btn_title: Get Started
+
+home:
+  location: Location
+  city: Bilzen, Tanjungbalai
+  search: Search coffee
+  promo: Promo
+  buy_one: Buy one get one FREE
+  coffee_feed:
+    all_coffee: All Coffee
+    machiato: Machiato
+    latte: Latte
+    americano: Americano
+  coffee_card:
+    caffe_mocha:
+      head: Caffe Mocha
+      title: Deep Foam
+      price: $ 4.53
+    flat_white:
+      head: Flat White
+      title: Espresso
+      price: $ 3.53
+    mocha_fusi:
+      head: Mocha Fusi
+      title: Ice/Hot
+      price: $ 7.53
+    caffe_panna:
+      head: Caffe Panna
+      title: Ice/Hot
+      price: $ 5.53

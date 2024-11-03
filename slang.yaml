@@ -1,0 +1,5 @@
+base_locale: en
+namespaces: true
+input_directory: lib/core/constants/localization
+input_file_pattern: .i18n.yaml
+output_directory: lib/core/constants/gen
