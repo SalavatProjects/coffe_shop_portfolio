@@ -30,68 +30,73 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => CoffeeTapeState(),
-      child: Stack(
-        alignment: Alignment.topCenter,
-        children:
-        <Widget>[
-          Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 280.h,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                    colors: AppColors.kBlackGradientColors,
-                  begin: Alignment.bottomLeft,
-                  end: Alignment.topRight
-                )
-              ),
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: _horizontalPadding,
-                    vertical: 0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      SizedBox(height: 42.h,),
-                      Text(
-                        t.strings.home.location,
-                        style: AppStyles.kSoraGreyRegular(12.sp),
-                      ),
-                      SizedBox(height: 8.h,),
-                      ToggleSearchBtn(onTap: () => _toggleSearchPanel(),
-                        isTapped: _isSearchPanelOpened,),
-                      SizedBox(height: 24.h,),
-                      SearchPanel(
-                          textEditingController: _textEditingController,
-                          animationDuration: _animationDuration,
-                          isPanelOpened: _isSearchPanelOpened,
-                          filterFunc: () {})
-                    ],
-                  ),
-              ),
-            ),
-          ],
-        ),
-        AnimatedPositioned(
-          top: _isSearchPanelOpened ? 176.w : 124.w,
-          left: _horizontalPadding,
-          right: _horizontalPadding,
-          duration: _animationDuration,
-          child: Column(
+    return
+        ChangeNotifierProvider(
+        create: (context) => CoffeeTapeState(),
+        child: Stack(
+          alignment: Alignment.topCenter,
+          children:
+          <Widget>[
+            Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: 24.h,),
-              PromoCard(),
-              CoffeeTape(),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 280.h,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: AppColors.kBlackGradientColors,
+                    begin: Alignment.bottomLeft,
+                    end: Alignment.topRight
+                  )
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: _horizontalPadding,
+                      vertical: 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(height: 42.h,),
+                        Text(
+                          t.strings.home.location,
+                          style: AppStyles.kSoraGreyRegular(12.sp),
+                        ),
+                        SizedBox(height: 8.h,),
+                        ToggleSearchBtn(onTap: () => _toggleSearchPanel(),
+                          isTapped: _isSearchPanelOpened,),
+                        SizedBox(height: 24.h,),
+                        SearchPanel(
+                            textEditingController: _textEditingController,
+                            animationDuration: _animationDuration,
+                            isPanelOpened: _isSearchPanelOpened,
+                            filterFunc: () {})
+                      ],
+                    ),
+                ),
+              ),
             ],
           ),
+          AnimatedPositioned(
+            top: _isSearchPanelOpened ? 176.w : 124.w,
+            left: _horizontalPadding,
+            right: _horizontalPadding,
+            bottom: 0,
+            duration: _animationDuration,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(height: 24.h,),
+                PromoCard(),
+                SizedBox(height: 24.h,),
+                CoffeeTape(),
+                SizedBox(height: 24.h,),
+                CoffeeCards(),
+              ],
+            ),
+          )
+          ],
         )
-        ],
-      ),
-    );
+        );
   }
 }

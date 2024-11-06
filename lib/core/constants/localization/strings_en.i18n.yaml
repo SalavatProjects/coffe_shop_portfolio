@@ -18,16 +18,16 @@ home:
     caffe_mocha:
       head: Caffe Mocha
       title: Deep Foam
-      price: $ 4.53
+      price: 4.53
     flat_white:
       head: Flat White
       title: Espresso
-      price: $ 3.53
+      price: 3.53
     mocha_fusi:
       head: Mocha Fusi
       title: Ice/Hot
-      price: $ 7.53
+      price: 7.53
     caffe_panna:
       head: Caffe Panna
       title: Ice/Hot
-      price: $ 5.53
+      price: 5.53

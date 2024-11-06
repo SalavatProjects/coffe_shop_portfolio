@@ -54,6 +54,12 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Star.svg
   String get star => 'assets/icons/Star.svg';
 
+  /// File path: assets/icons/plus.svg
+  String get plus => 'assets/icons/plus.svg';
+
+  /// File path: assets/icons/star yellow.svg
+  String get starYellow => 'assets/icons/star yellow.svg';
+
   /// List of all assets
   List<String> get values => [
         arrowDown2,
@@ -69,7 +75,9 @@ class $AssetsIconsGen {
         notification,
         phone,
         search,
-        star
+        star,
+        plus,
+        starYellow
       ];
 }
 
@@ -88,6 +96,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/Brown plus.png
   AssetGenImage get brownPlus =>
       const AssetGenImage('assets/images/Brown plus.png');
+
+  /// File path: assets/images/Caffe Mocha wide.png
+  AssetGenImage get caffeMochaWide =>
+      const AssetGenImage('assets/images/Caffe Mocha wide.png');
 
   /// File path: assets/images/Caffe Mocha.png
   AssetGenImage get caffeMocha =>
@@ -129,6 +141,7 @@ class $AssetsImagesGen {
         bean,
         biker,
         brownPlus,
+        caffeMochaWide,
         caffeMocha,
         caffePanna,
         flatWhite,

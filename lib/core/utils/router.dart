@@ -12,7 +12,12 @@ final GoRouter router = GoRouter(
   path: '/',
   routes: [
     TypedGoRoute<BottomNavBarScreenRoute>(
-      path: '/bottom_nav_bar'
+      path: '/bottom_nav_bar',
+      routes: [
+        TypedGoRoute<DetailItemScreenRoute>(
+            path: '/detail_item_screen',
+        )
+      ]
     )
   ]
 )
@@ -30,5 +35,14 @@ class BottomNavBarScreenRoute extends GoRouteData {
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return const BottomNavBarScreen();
+  }
+}
+
+@immutable
+class DetailItemScreenRoute extends GoRouteData {
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return DetailItemScreen(coffee: state.extra as Coffee);
   }
 }

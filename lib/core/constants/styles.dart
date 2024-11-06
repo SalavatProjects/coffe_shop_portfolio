@@ -21,6 +21,15 @@ class AppStyles {
     );
   }
 
+  static TextStyle kSoraBlackSemiBold(double fontSize) {
+    return TextStyle(
+        fontSize: fontSize,
+        fontFamily: 'Sora',
+        fontWeight: FontWeight.w600,
+        color: AppColors.kBlackColor,
+    );
+  }
+
   static TextStyle kSoraGreyRegular(double fontSize) {
     return TextStyle(
       fontSize: fontSize,

@@ -114,7 +114,7 @@ class TranslationsStringsHomeCoffeeCardCaffeMochaEn {
 	// Translations
 	String get head => 'Caffe Mocha';
 	String get title => 'Deep Foam';
-	String get price => '\$ 4.53';
+	String get price => '4.53';
 }
 
 // Path: strings.home.coffee_card.flat_white
@@ -126,7 +126,7 @@ class TranslationsStringsHomeCoffeeCardFlatWhiteEn {
 	// Translations
 	String get head => 'Flat White';
 	String get title => 'Espresso';
-	String get price => '\$ 3.53';
+	String get price => '3.53';
 }
 
 // Path: strings.home.coffee_card.mocha_fusi
@@ -138,7 +138,7 @@ class TranslationsStringsHomeCoffeeCardMochaFusiEn {
 	// Translations
 	String get head => 'Mocha Fusi';
 	String get title => 'Ice/Hot';
-	String get price => '\$ 7.53';
+	String get price => '7.53';
 }
 
 // Path: strings.home.coffee_card.caffe_panna
@@ -150,7 +150,7 @@ class TranslationsStringsHomeCoffeeCardCaffePannaEn {
 	// Translations
 	String get head => 'Caffe Panna';
 	String get title => 'Ice/Hot';
-	String get price => '\$ 5.53';
+	String get price => '5.53';
 }
 
 /// Flat map(s) containing all translations.
@@ -172,16 +172,16 @@ extension on Translations {
 			case 'strings.home.coffee_feed.americano': return 'Americano';
 			case 'strings.home.coffee_card.caffe_mocha.head': return 'Caffe Mocha';
 			case 'strings.home.coffee_card.caffe_mocha.title': return 'Deep Foam';
-			case 'strings.home.coffee_card.caffe_mocha.price': return '\$ 4.53';
+			case 'strings.home.coffee_card.caffe_mocha.price': return '4.53';
 			case 'strings.home.coffee_card.flat_white.head': return 'Flat White';
 			case 'strings.home.coffee_card.flat_white.title': return 'Espresso';
-			case 'strings.home.coffee_card.flat_white.price': return '\$ 3.53';
+			case 'strings.home.coffee_card.flat_white.price': return '3.53';
 			case 'strings.home.coffee_card.mocha_fusi.head': return 'Mocha Fusi';
 			case 'strings.home.coffee_card.mocha_fusi.title': return 'Ice/Hot';
-			case 'strings.home.coffee_card.mocha_fusi.price': return '\$ 7.53';
+			case 'strings.home.coffee_card.mocha_fusi.price': return '7.53';
 			case 'strings.home.coffee_card.caffe_panna.head': return 'Caffe Panna';
 			case 'strings.home.coffee_card.caffe_panna.title': return 'Ice/Hot';
-			case 'strings.home.coffee_card.caffe_panna.price': return '\$ 5.53';
+			case 'strings.home.coffee_card.caffe_panna.price': return '5.53';
 			default: return null;
 		}
 	}

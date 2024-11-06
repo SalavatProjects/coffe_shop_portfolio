@@ -19,10 +19,10 @@ class CoffeeTapeBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 30.w,
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 0),
       child: ElevatedButton(
-          onPressed: onPressed, 
+          onPressed: onPressed,
           style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(_borderRadius)

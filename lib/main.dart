@@ -1,8 +1,15 @@
 /*
 * В данном проекте использовались следующие технологии:
+* ScreenUtil
+* LinearGradient
+* go_router
+* Slang
+* Build Runner
 * AnimatedContainer
 * AnimatedPositioned
 * ChangeNotifier
+* Wrap
+* freezed
 * */
 
 import 'package:flutter/material.dart';

@@ -17,4 +17,9 @@ class AppColors {
     Color(0xff313131),
     Color(0xff111111),
   ];
+
+  static List<Color> kBlackGradientColorsWithOpacity = [
+    const Color(0xff313131).withOpacity(0.3),
+    const Color(0xff111111).withOpacity(0.3),
+  ];
 }
